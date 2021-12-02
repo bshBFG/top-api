@@ -37,3 +37,5 @@ lerna-debug.log*
 # Configuration
 .env
 mongo-data
+
+REST

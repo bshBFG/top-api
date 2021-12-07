@@ -7,7 +7,8 @@ import { Review, ReviewDocument } from './review.schema';
 @Injectable()
 export class ReviewService {
   constructor(
-    @InjectModel(Review.name) private reviewModel: Model<ReviewDocument>,
+    @InjectModel(Review.name)
+    private readonly reviewModel: Model<ReviewDocument>,
   ) {}
 
   async create(dto: CreateReviewDto): Promise<Review> {

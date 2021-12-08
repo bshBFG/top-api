@@ -68,7 +68,7 @@ export class TopPage {
   @Prop()
   tagsTitle: string;
 
-  @Prop({ type: String })
+  @Prop({ type: [String] })
   tags: string[];
 }
 
